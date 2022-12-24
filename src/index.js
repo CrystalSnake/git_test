@@ -1,3 +1,4 @@
+import './style.css';
 // import _ from 'lodash';
 
 // function component() {
@@ -20,6 +21,7 @@ function component() {
 
   // use your function!
   element.textContent = myName('Cody');
+  element.classList.add('hello');
   return element;
 }
 
