@@ -1,4 +1,5 @@
 import './style.css';
+import Icon from './gear.png';
 // import _ from 'lodash';
 
 // function component() {
@@ -22,6 +23,13 @@ function component() {
   // use your function!
   element.textContent = myName('Cody');
   element.classList.add('hello');
+
+  // Add the image to our existing div.
+  const myIcon = new Image();
+  myIcon.src = Icon;
+
+  element.appendChild(myIcon);
+
   return element;
 }
 
